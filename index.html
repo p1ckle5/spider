@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 9</title>
+    <style>
+        html,
+        body {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: brown;
+            color: white;
+            padding: 10px;
+        }
+
+        .navbar a {
+            font-size: 20px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .menu {
+            flex: 0.5;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .hero-text {
+            flex: 1
+        }
+
+        .hero-text h1 {
+            font-size: 50px;
+            color: brown;
+        }
+        .desktop {
+	  display: none;
+	}
+
+	.hero {
+	  display: flex;
+	  flex-direction: column;
+	}
+
+	@media only screen and (min-width: 600px) {
+	  .hero img {
+	    width: 60%;
+	  }
+	  .desktop {
+	    display: flex;
+	  }
+	  .mobile {
+	    display: none;
+	  }
+	  .hero {
+	    flex-direction: row;
+	  }
+	}
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navbar mobile">
+        <h2><a>Ewa agoyin.com</a></h2>
+        <ion-icon name="menu-outline" size="large"></ion-icon>
+    </div>
+    <div class="navbar desktop">
+        <h2><a>Ewa agoyin.com</a></h2>
+        <div class="menu">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#Documentation">Store Location</a>
+        </div>
+    </div>
+    <div class="hero">
+        <div class="hero-text">
+            <h1>Buy Hot Beans with Bread</h1>
+            <h3>anytime, anywhere ....</h3>
+        </div>
+        <img src="Ewa-agoyin.webp" alt="Picture of beans" srcset="" />
+    </div>
+    <hr/>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

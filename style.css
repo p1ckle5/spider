@@ -1,0 +1,14 @@
+.menu a:first-child:hover{
+    color:#ffe13c;
+}
+
+.menu a {
+    display: flex;
+    flex: 1;
+    font-size: 15px;
+    justify-content: center;
+    border-right: 2px solid white;
+}
+a:last-child {
+    border-right: none;
+}
